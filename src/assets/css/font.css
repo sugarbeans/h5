@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "NotoSansHans-Regular";
+    src: url("../fonts/NotoSansHans-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSansHans-Regular.woff") format("woff"),
+    url("../fonts/NotoSansHans-Regular.ttf") format("truetype"),
+    url("../fonts/NotoSansHans-Regular.eot") format("embedded-opentype"),
+    url("../fonts/NotoSansHans-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NotoSansHans-Medium";
+    src: url("../fonts/NotoSansHans-Medium.woff2") format("woff2"),
+    url("../fonts/NotoSansHans-Medium.woff") format("woff"),
+    url("../fonts/NotoSansHans-Medium.ttf") format("truetype"),
+    url("../fonts/NotoSansHans-Medium.eot") format("embedded-opentype"),
+    url("../fonts/NotoSansHans-Medium.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    /*腾讯移动端字体解决方案*/
+    font-family: "NotoSansHans-Regular" , -apple-system, "PingFang SC", BlinkMacSystemFont, "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+}

@@ -1,0 +1,58 @@
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.mg-auto {
+    margin: 0 auto;
+    display: block;
+}
+.mgt-40 {
+    margin-top: 0.4rem;
+}
+.mgb-40 {
+    margin-bottom: 0.4rem;
+}
+.mgl-2 {
+    margin-left: 0.2rem;
+}
+.mgt-2 {
+    margin-top: 0.2rem;
+}
+.mgb-2 {
+    margin-bottom: 0.2rem;
+}
+.pdt-3 {
+    padding-top: 0.3rem;
+}
+.pdb-3 {
+    padding-bottom: 0.3rem;
+}
+.pd-2 {
+    padding: 0.2rem;
+}
+.pdt-1 {
+    padding-top: 0.14rem;
+}
+.pdb-1 {
+    padding-bottom: 0.14rem;
+}
+.fz-22 {
+    font-size: 0.22rem;
+}
+.fz-3 {
+    font-size: 0.3rem;
+}
+.clear:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+ul,
+li {
+    list-style: none;
+}

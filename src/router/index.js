@@ -2,6 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Home from '@/components/Home'
+import ticket from '@/components/ticket'
+import hotel from '@/components/hotel'
+
 Vue.use(Router)
 
 const router = new Router({
@@ -18,6 +21,24 @@ const router = new Router({
         title: '首页'
       },
       component: Home
+    },
+    {
+      path: '/ticket',
+      name: 'ticket',
+      meta: {
+        keepAlive: false,
+        title: '门票预订'
+      },
+      component: ticket
+    },
+    {
+      path: '/hotel',
+      name: 'hotel',
+      meta: {
+        keepAlive: false,
+        title: '酒店预订'
+      },
+      component: hotel
     }
   ]
 })

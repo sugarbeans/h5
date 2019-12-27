@@ -21,6 +21,10 @@ export default {
   },
   changeLoginStatus(state, isLogin) {
     state.isLogin = isLogin
+  },
+
+  changeScale (state, scale) {
+    state.scale = scale
   }
 
 }

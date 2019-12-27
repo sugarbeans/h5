@@ -21,5 +21,9 @@ export default {
 
   changeLoginStatus({ commit }, isLogin) {
     commit("changeLoginStatus", isLogin)
+  },
+
+  changeScale({ commit }, scale) {
+    commit("changeScale", scale)
   }
 }

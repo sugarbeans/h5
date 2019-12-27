@@ -15,4 +15,5 @@ const state = {
 
   isLogin: false,
   username: null,
+  scale: {}
 }

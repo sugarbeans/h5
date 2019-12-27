@@ -8,8 +8,12 @@
 </template>
 
 <script>
+  import {mapState, mapActions} from "vuex";
   export default {
     name: 'App',
+    computed: mapState([
+      "scale"
+    ]),
     created () {
       let docEl = document.documentElement
       let resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize'
@@ -18,12 +22,15 @@
         var clientWidth = docEl.clientWidth
         var clientHeight = docEl.clientHeight
         docEl.style.fontSize = 100 * (clientWidth / 375) + 'px'
-        _this.$store.commit('changeScale', {scale: clientWidth / 375, height: clientHeight})
+        _this.changeScale({scale: clientWidth / 375, height: clientHeight})
       }
       recalc()
       if (!document.addEventListener) return
       window.addEventListener(resizeEvt, recalc, false)
       document.addEventListener('DOMContentLoaded', recalc, false)
+    },
+    methods: {
+      ...mapActions(['changeScale'])
     }
   }
 </script>
